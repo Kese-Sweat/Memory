@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+
+    display: flex;
+    justify-content: center;
+}
+
+#drinks{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 750px
+}
+
+#grid{
+    display: flex;
+    justify-content: center;
+}
+
+
+span{
+
+    background-color: cornflowerblue;
+    display: flex;
+    
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
