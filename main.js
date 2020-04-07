@@ -1,5 +1,5 @@
 let lives = 8
-$('.lives').html(lives)
+let win = 0
 
 function myTimer(){
     let secs=0;
@@ -16,7 +16,7 @@ function myTimer(){
     $('.timer').html(timer)
 },1000)
 }
-myTimer();
+myTimer()
 console.log(myTimer)
 
 
@@ -84,13 +84,23 @@ if (card1 && card2) {
     if (card1.data('id') === card2.data('id')) {
         card1.addClass('match')
         card2.addClass('match')
+        win++
         clearTimeout(time)
         
     }
+    if (win===9){
+        alert ('DRINKS ON ME!')
+        console.log(win)
+    }
 
-    //else (card1.data('id') !== card2.data('id')) {
-        //lives--
-    //}
+    else (card1.data('id') !== card2.data('id')); {
+        lives--
+        console.log(lives)
+        $('.lives').html(lives)
+    }
+    if(lives===0){
+        alert   ('NOOO BOOZE FOR YOU!')
+    }
 } 
 })
 
