@@ -11,6 +11,7 @@ h1{
     font-size: 100px;
     display: flex;
     justify-content: center;
+    color: #ffd700c4;
 }
 
 #drinks{
@@ -26,6 +27,8 @@ h1{
     justify-content: flex-end;
     width: 75%;
     font-family: 'Amatic SC';
+    color: #ffd700c4;
+    font-size: 20px;
 }
 
 #grid{
@@ -40,9 +43,9 @@ h1{
 
 span{
 
-    background-color: cornflowerblue;
+    background-color: olive;
     display: flex;
-    
+    border-radius: 10px;
     justify-content: space-between;
     width: 200px;
     height: 200px;
@@ -53,9 +56,14 @@ span{
 
 .card{
 
-    color: cornflowerblue;
+    color: olive;
 }
 
 .card.active{
-    color: black;
+    color: honeydew;
+}
+
+.card.match{
+
+    color: honeydew;
 }
