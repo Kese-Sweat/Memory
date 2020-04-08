@@ -1,23 +1,23 @@
 let lives = 8
 let win = 0
 
-function myTimer(){
-    let secs=0;
-    let min=0;
-    let timer= min + ":" + secs;
-    let myInterval = setInterval(()=>{
-   
+
+let secs=0;
+let min=0;
+let timer= min + ":" + secs
+setInterval(() => {
+    
     secs++;
     
     if(secs === 60){
         min++; // A min will add everytime min hits 60
         secs=0; // will return to 0 once secs hit 60
     }
-    $('.timer').html(timer)
+   
 },1000)
-}
-myTimer()
-console.log(myTimer)
+
+$('.timer').html(timer)
+
 
 
 
